@@ -19,12 +19,15 @@ public class Pickup : MonoBehaviour
             {
                 case KEY_TYPE.BLUE:
                     other.GetComponent<Gaze>().blueKey = true;
+                    Destroy(gameObject);
                     break;
                 case KEY_TYPE.RED:
                     other.GetComponent<Gaze>().redKey = true;
+                    Destroy(gameObject);
                     break;
                 case KEY_TYPE.GREEN:
                     other.GetComponent<Gaze>().greenKey = true;
+                    Destroy(gameObject);
                     break;
             }
         }
