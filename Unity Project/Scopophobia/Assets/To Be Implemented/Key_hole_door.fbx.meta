@@ -2,7 +2,55 @@ fileFormatVersion: 2
 guid: 406c7f4a2ffbe6e46a2f6886dbf79114
 ModelImporter:
   serializedVersion: 26
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -9217631367863945836
+    second: keyhole|Cube.001Action
+  - first:
+      74: 1539745752558819602
+    second: keyhole|Plane.001Action
+  - first:
+      74: 3041861722138001331
+    second: keyhole|PlaneAction
+  - first:
+      74: 1795861762526996665
+    second: keyhole|Torus.000Action
+  - first:
+      74: 5416930198719983525
+    second: Door|Cube.001Action
+  - first:
+      74: 827542854888729540
+    second: Door|Plane.001Action
+  - first:
+      74: -526483918684959360
+    second: Door|PlaneAction
+  - first:
+      74: -4925762403821155528
+    second: Door|Torus.000Action
+  - first:
+      74: 5501041971518247575
+    second: Lock|Cube.001Action
+  - first:
+      74: 6354306851813694462
+    second: Lock|Plane.001Action
+  - first:
+      74: 5013112371318211147
+    second: Lock|PlaneAction
+  - first:
+      74: -5180226702348168097
+    second: Lock|Torus.000Action
+  - first:
+      74: -1546335925664712504
+    second: Key|Cube.001Action
+  - first:
+      74: -3223088935494840738
+    second: Key|Plane.001Action
+  - first:
+      74: 4031213280173668044
+    second: Key|PlaneAction
+  - first:
+      74: 6209989079493781320
+    second: Key|Torus.000Action
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -87,7 +135,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
