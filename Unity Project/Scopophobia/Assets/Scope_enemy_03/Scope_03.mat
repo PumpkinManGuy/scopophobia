@@ -7,10 +7,10 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WallInterior
+  m_Name: Scope_03
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _METALLICGLOSSMAP _NORMALMAP
-  m_LightmapFlags: 4
+  m_ShaderKeywords: _EMISSION
+  m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: b2e8bc7f6e99cf14fa57a076b5ab5a08, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -36,15 +36,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 785f81271a58a2442b30724cf373e69e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 63c767df3895578479c873ca53a5754c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 82d6d5f8e734c0e4c8101a0db3f6d422, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 22bc2603830b643488bd1d79377eba49, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -74,4 +74,4 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
