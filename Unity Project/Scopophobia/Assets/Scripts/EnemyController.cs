@@ -8,6 +8,7 @@ public class EnemyController : MonoBehaviour
     public bool seen = false;
     public GameObject player;
     NavMeshAgent agent;
+    bool notRun = true;
 
     public void Start()
     {
@@ -19,7 +20,13 @@ public class EnemyController : MonoBehaviour
     }
     public void Update()
     {
-        if (seen)
+        if (seen && notRun)
+        {
+            agent.destination = player.transform.position;
+            GetComponentInParent<Animator>().SetTrigger("Seen");
+            notRun = false;
+        }
+        if (seen && !notRun)
         {
             agent.destination = player.transform.position;
         }

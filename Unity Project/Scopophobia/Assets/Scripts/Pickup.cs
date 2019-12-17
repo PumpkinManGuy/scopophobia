@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
+    public void Update()
+    {
+        transform.Rotate(new Vector3(0f, 50*Time.deltaTime, 0f), Space.World);
+    }
     public enum KEY_TYPE
     {
         BLUE = 0,

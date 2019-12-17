@@ -8,7 +8,9 @@ public class Gaze : MonoBehaviour
     public Camera _cam;
     public float maxRange;
 
-    public Text uiText;
+    public Image redEye;
+    public Image blueEye;
+    public Image greenEye;
 
     public bool blueKey;
     public bool greenKey;
@@ -18,10 +20,6 @@ public class Gaze : MonoBehaviour
         if (!_cam)
         {
             _cam = GameObject.Find("CenterEyeAnchor").GetComponent<Camera>();
-        }
-        if (!uiText)
-        {
-            uiText = GameObject.Find("UITEXT").GetComponent<Text>();
         }
     }
     public void Update()
@@ -50,19 +48,29 @@ public class Gaze : MonoBehaviour
             }
         }
 
-        var sText = "Keys: ";
         if (blueKey)
         {
-            sText += "Blue";
+            blueEye.gameObject.SetActive(true);
+        }
+        else
+        {
+            blueEye.gameObject.SetActive(false);
         }
         if (greenKey)
         {
-            sText += ", Green";
+            greenEye.gameObject.SetActive(true);
+        }
+        else
+        {
+            greenEye.gameObject.SetActive(false);
         }
         if (redKey)
         {
-            sText += ", Red";
+            redEye.gameObject.SetActive(true);
         }
-        uiText.text = sText;
+        else
+        {
+            redEye.gameObject.SetActive(false);
+        }
     }
 }
