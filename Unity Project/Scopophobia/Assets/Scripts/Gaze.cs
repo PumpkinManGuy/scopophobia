@@ -8,6 +8,8 @@ public class Gaze : MonoBehaviour
     public Camera _cam;
     public float maxRange;
 
+    public ThisLevel currLevel;
+
     public Image redEye;
     public Image blueEye;
     public Image greenEye;
@@ -21,6 +23,7 @@ public class Gaze : MonoBehaviour
         {
             _cam = GameObject.Find("CenterEyeAnchor").GetComponent<Camera>();
         }
+        currLevel = ThisLevel.ONE;
     }
     public void Update()
     {
