@@ -45,6 +45,7 @@ public class Gaze : MonoBehaviour
                         if (hit.collider.GetComponent<EnemyController>())
                         {
                             hit.collider.GetComponent<EnemyController>().seen = true;
+                            hit.collider.transform.parent.GetComponent<CreatureSoundHandler>().justSeen = true;
                         }
                     }
                 }

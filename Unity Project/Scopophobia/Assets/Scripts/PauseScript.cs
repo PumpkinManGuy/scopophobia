@@ -22,7 +22,6 @@ public class PauseScript : MonoBehaviour
     {
         for (;;)
         {
-            Debug.Log("Started Coroutine");
             if (paused)
             {
                 while (!upDown)

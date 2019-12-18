@@ -1,13 +1,16 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class pLAYERdEATHtRACKER : MonoBehaviour
 {
     public float checkRadius = 5f;
-    public int currentNearMe = 0;
+    public float currentNearMe = 0;
     public int nearMax = 5;
     public Canvas loss;
+    public Image vignette;
     public void Update()
     {
         currentNearMe = 0;
@@ -25,6 +28,14 @@ public class pLAYERdEATHtRACKER : MonoBehaviour
                 }
             }
         }
+
+        //Debug.Log(string.Format("Max: {0} ||| Current: {1} ||| Alpha: {2}",
+        //    nearMax, currentNearMe, (currentNearMe/nearMax)));
+
+        var gcol = vignette.color;
+        gcol.a = (currentNearMe / nearMax);
+        vignette.color = gcol;
+
         if (currentNearMe >= nearMax)
         {
             loss.gameObject.SetActive(true);
@@ -34,6 +45,14 @@ public class pLAYERdEATHtRACKER : MonoBehaviour
                 Application.LoadLevel(0);
             }
         }
+    }
+
+    private void VignetteColor()
+    {
+        Debug.Log("Working + " + (currentNearMe/nearMax));
+        var gcol = vignette.color;
+        gcol.a = (currentNearMe / nearMax);
+        vignette.color = gcol;
     }
 
     public void OnDrawGizmos()
